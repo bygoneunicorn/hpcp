@@ -1,32 +1,74 @@
+
+@font-face {
+  font-family: "Harry Potter";
+  src: url("./font.TTF");
+  src: 
+  url("./font.TTF") format("woff"),
+  url("./font.TTF") format("opentype"),
+  url("./font.TTF") format("svg");
+  }
+button:focus {
+  outline: 0px solid #fff;
+  outline-offset: -4px;
+}
+button:active {
+  background: #591f20;
+}
 .App {
   text-align: center;
+  background: linear-gradient(#020202af, #020202af), url(./brick-wall.jpg) no-repeat center ;
+  height: 100vh;
+  width: 100%;
+  color: #f6ca33;
+  position: relative;
+}
+h1 {
+  margin: 0;
+  font-family: 'Harry Potter', Arial;
+  font-weight: normal;
+  font-style: normal;
+  padding: 25px 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+button {
+  background: #832325;
+  color: #f6ca33;
+  border: 1px solid #f6ca33;
+  border-radius: 10px;
+  padding: 15px 25px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.gameControls{
+  position: fixed;
+  width: 100%;
+  top: 30%;
+}
+.prompts{
+  font-size: 48px;
+}
+.gameControlButtons{
+  padding-top: 20px;
+}
+.gameControlButtons button{
+  font-size: 24px;
+  margin: 0 20px;
+  padding: 15px 40px;
+}
+.scoreBoard{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  bottom: 20px;
+}
+.teamLabel{
+  font-size: 28px;
+}
+.score{
+  font-size: 28px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* my
+colors: 
+#873436 - red
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+*/
